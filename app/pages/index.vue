@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { usePostsStore } from '~/entities/posts';
 import { usePagination } from '~/shared/model/usePagination';
-import AppPagination from '~/shared/ui/AppPagination.vue';
 
 const store = usePostsStore();
 callOnce(store.fetchPosts);
@@ -11,7 +10,7 @@ const { page, currentList } = usePagination(() => store.postsList, itemsPerPage)
 
 <template>
   <UContainer class="mt-10">
-    <AppPagination
+    <UPagination 
       v-model:page="page"
       :items-per-page="itemsPerPage"
       :total="store.postsList.length"
