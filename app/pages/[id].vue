@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { PostsList } from '~/widgets/posts';
 </script>
 
 <template>
   <UContainer class="mt-10">
-    <PostsList />
+    test
   </UContainer>
 </template>

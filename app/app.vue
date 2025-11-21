@@ -1,6 +1,10 @@
 <template>
   <UApp>
     <NuxtRouteAnnouncer />
-    <NuxtPage />
+    <UPage>
+      <UPageBody>
+        <NuxtPage />
+      </UPageBody>
+    </UPage>
   </UApp>
 </template>
