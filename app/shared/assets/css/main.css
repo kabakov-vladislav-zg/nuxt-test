@@ -1,2 +1,24 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@theme {
+  --font-sans: 'TT Commons', sans-serif;
+}
+
+:root {
+  --ui-text-dimmed: #F3F3F3;
+  --ui-text-muted: #868686;
+  --ui-text-toned: #232323;
+  --ui-text: #101010;
+  --ui-text-highlighted: #101010;
+  --ui-text-inverted: white;
+  
+  --ui-primary: #7941A7;
+  --ui-secondary: #E2BEFF;
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+
+  --ui-bg-inverted: var(--ui-text);
+}
