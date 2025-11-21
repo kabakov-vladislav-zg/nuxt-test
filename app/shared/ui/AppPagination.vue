@@ -16,11 +16,11 @@ const page = defineModel<number>('page')
     :items-per-page="itemsPerPage"
     :total="total"
     :ui="{
-        list: 'gap-2!',
-        first: 'hidden',
-        prev: 'hidden',
-        last: 'hidden',
-        next: 'p-2.5 *:size-6',
+      list: 'gap-2!',
+      first: 'hidden',
+      prev: 'hidden',
+      last: 'hidden',
+      next: 'p-2.5 *:size-6',
     }"
   >
     <template #item="{ item }">

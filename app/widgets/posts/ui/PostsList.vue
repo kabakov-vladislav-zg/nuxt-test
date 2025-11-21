@@ -10,17 +10,17 @@ const { page, currentList } = usePagination(() => store.postsList, itemsPerPage)
 </script>
 
 <template>
-    <UBlogPosts>
-      <PostsItem
-        v-for="post in currentList"
-        :key="post.createdAt"
-        :post="post"
-        to="/1"
-      />
-    </UBlogPosts> 
-    <AppPagination 
-      v-model:page="page"
-      :items-per-page="itemsPerPage"
-      :total="store.postsList.length"
+  <UBlogPosts>
+    <PostsItem
+      v-for="post in currentList"
+      :key="post.createdAt"
+      :post="post"
+      to="/1"
     />
+  </UBlogPosts> 
+  <AppPagination 
+    v-model:page="page"
+    :items-per-page="itemsPerPage"
+    :total="store.postsList.length"
+  />
 </template>

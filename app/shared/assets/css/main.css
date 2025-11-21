@@ -21,4 +21,6 @@
   --ui-error: var(--ui-color-error-500);
 
   --ui-bg-inverted: var(--ui-text);
+
+  --ui-header-height: 120px;
 }

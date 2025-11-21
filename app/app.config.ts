@@ -1,7 +1,6 @@
 export default defineAppConfig({
   ui: {
     blogPosts: {
-      base: '',
       variants: {
         orientation: {
           horizontal: 'sm:grid sm:grid-cols-2 lg:grid-cols-4',
@@ -11,7 +10,7 @@ export default defineAppConfig({
     },
     button: {
       slots: {
-        base: 'rounded-xl! '
+        base: 'rounded-xl! leading-none!'
       },
       compoundVariants: [
         {
@@ -26,5 +25,32 @@ export default defineAppConfig({
         },
       ],
     },
+    pageHeader: {
+      slots: {
+        root: 'border-0! pb-0! pt-20!',
+        container: '',
+        title: 'text-[5.25rem]! font-normal!',
+      },
+    },
+    pageBody: {
+      base: 'pb-35! mt-10!'
+    },
+    header: {
+      slots: {
+        root: 'border-0',
+        container: 'lg:px-10! max-w-full!',
+        left: 'grow-0!',
+        center: 'flex-1! justify-end! items-center!',
+        right: 'grow-0! gap-4!',
+        toggle: '*:size-8',
+        body: 'flex-1!',
+      },
+    },
+    navigationMenu: {
+      slots: {
+        list: 'gap-14.5!',
+        link: 'text-xl! text-highlighted! hover:text-muted!',
+      },
+    }
   },
 })

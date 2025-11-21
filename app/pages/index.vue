@@ -4,6 +4,9 @@ import { PostsList } from '~/widgets/posts';
 
 <template>
   <UContainer class="mt-10">
-    <PostsList />
+    <UPageHeader title="Articles" />
+    <UPageBody>
+      <PostsList />
+    </UPageBody>
   </UContainer>
 </template>
