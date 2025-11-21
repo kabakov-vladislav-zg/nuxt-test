@@ -10,16 +10,19 @@ export default defineAppConfig({
       }
     },
     button: {
+      slots: {
+        base: 'rounded-xl! '
+      },
       compoundVariants: [
         {
           color: 'neutral',
           variant: 'soft',
-          class: 'rounded-xl! bg-[#F3F3F3]! hover:bg-[#E8E8E8]! active:bg-[#E8E8E8]! focus-visible:bg-[#E8E8E8]!'
+          class: 'bg-[#F3F3F3]! hover:bg-[#E8E8E8]! active:bg-[#E8E8E8]! focus-visible:bg-[#E8E8E8]!'
         },
         {
           color: 'neutral',
           variant: 'outline',
-          class: 'ring-[#E8E8E8]! rounded-xl! border-[#E8E8E8]! hover:bg-[#E8E8E8]! active:bg-[#E8E8E8]! focus-visible:bg-[#E8E8E8]!'
+          class: 'ring-[#E8E8E8]! hover:bg-[#E8E8E8]! active:bg-[#E8E8E8]! focus-visible:bg-[#E8E8E8]!'
         },
       ],
     },
