@@ -26,8 +26,8 @@ const page = defineModel<number>('page')
     <template #item="{ item }">
       <UButton
         v-if="item.type === 'page'"
-        :color="page === item.value! ? 'neutral' : 'neutral'"
-        :variant="page === item.value! ? 'solid' : 'soft'"
+        color="neutral"
+        :variant="page === item.value ? 'solid' : 'soft'"
         :label="String(item.value)"
         :to="to?.(item.value)"
         class="size-11 flex justify-center items-center text-base"
