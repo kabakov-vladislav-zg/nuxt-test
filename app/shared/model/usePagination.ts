@@ -1,4 +1,4 @@
-import { chunk } from 'lodash';
+import chunk from 'lodash/chunk';
 
 export function usePagination<T>(list: MaybeRefOrGetter<T[]>, itemsPerPage: MaybeRefOrGetter<number>) {
   const page = ref(1);

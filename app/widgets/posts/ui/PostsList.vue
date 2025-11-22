@@ -4,7 +4,14 @@ import { usePagination } from '~/shared/model/usePagination';
 import AppPagination from '~/shared/ui/AppPagination.vue';
 
 const store = usePostsStore();
-callOnce(store.fetchPosts);
+
+await useAsyncData(
+  'posts',
+  async () => {
+    return store.fetchPosts()
+  },
+);
+
 const itemsPerPage = 8;
 const { page, currentList } = usePagination(() => store.postsList, itemsPerPage);
 </script>

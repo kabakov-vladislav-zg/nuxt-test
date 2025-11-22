@@ -16,11 +16,13 @@ export const usePostsStore = defineStore('postsStore', {
   }),
   actions: {
     async fetchPosts() {
-      this.postsList = await PostsApi.fetchPosts()
+      this.postsList = await PostsApi.fetchPosts();
+      return true;
     },
 
     async fetchPostById(id: string) {
-      this.post = await PostsApi.fetchPostById(id)
+      this.post = await PostsApi.fetchPostById(id);
+      return true;
     },
   },
 })
