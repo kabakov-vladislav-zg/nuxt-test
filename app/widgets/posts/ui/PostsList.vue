@@ -27,6 +27,10 @@ const list = usePagination({
   itemsPerPage
 });
 
+const { y } = useWindowScroll({ behavior: 'smooth' })
+watch(() => page, () => {
+  y.value = 0;
+})
 </script>
 
 <template>
