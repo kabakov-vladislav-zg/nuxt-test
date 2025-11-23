@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-col flex-1 overflow-hidden! *:transform *:transition-transform *:duration-200 hover:*:-translate-y-6!">
+  <div class="flex flex-col flex-1 overflow-hidden *:transform *:transition-transform *:duration-200 hover:*:-translate-y-6">
     <UBlogPost
       :description="post.preview"
       :image="post.image"
