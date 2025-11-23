@@ -9,7 +9,7 @@ export const fetchPosts = async () => {
   return z.array(PostSchema).parse(res);
 }
 
-export const fetchPostById = async (id: string) => {
+export const fetchPostById = async (id: number) => {
   const res = await ofetch(`/posts/${id}`, { baseURL });
   return PostSchema.parse(res);
 }

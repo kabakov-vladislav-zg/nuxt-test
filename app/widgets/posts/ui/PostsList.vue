@@ -54,7 +54,7 @@ watch(() => page, () => {
         v-for="post in list"
         :key="post.createdAt"
         :post="post"
-        to="/1"
+        :to="`/post/${post.id}`"
       />
     </UBlogPosts> 
     <AppPagination 

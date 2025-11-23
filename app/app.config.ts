@@ -33,7 +33,7 @@ export default defineAppConfig({
       },
     },
     pageBody: {
-      base: 'pb-35! mt-10!'
+      base: 'pb-35! mt-10! space-y-8!'
     },
     header: {
       slots: {
