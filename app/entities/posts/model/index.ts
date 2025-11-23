@@ -21,13 +21,8 @@ export const usePostsStore = defineStore('postsStore', {
     },
 
     async fetchPostById(id: number) {
-      const fromPostsList = this.postsList.find(post => Number(post.id) === id);
-      if (fromPostsList) {
-        this.post = fromPostsList;
-      } else {
-        this.post = null;
-        this.post = await PostsApi.fetchPostById(id);
-      }
+      this.post = null;
+      this.post = await PostsApi.fetchPostById(id);
       return true;
     },
   },

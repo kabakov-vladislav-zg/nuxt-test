@@ -10,4 +10,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   css: ['~/shared/assets/css/main.css'],
+  routeRules: {
+    '/post': { redirect: '/' },
+  }
 })
